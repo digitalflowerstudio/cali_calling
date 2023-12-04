@@ -1,17 +1,13 @@
-@import "mixin";
-@import "smooth";
-@import "fonts";
+@use "./scripts/smooth";
+@use "./abstracts/" as a;
+@use "./mixin" as mix;
+
+
 
 header {
-  @include header;
+  @include mix.header;
 
   h3 {
-    @include textStyle(1.2rem, purple, green, 0.5rem 4rem);
-  }
-
-  p {
-    font-size: 1.2rem;
-    max-width: 50%;
-    text-align: center;
+    @include mix.textStyle(1.2rem, purple, green, 0.5rem 4rem);
   }
 }

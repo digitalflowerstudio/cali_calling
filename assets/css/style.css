@@ -15,6 +15,11 @@
   pointer-events: none;
 }
 
+/* ----- Import Fonts ----- */
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
 header {
   display: flex;
   flex-direction: column;
@@ -26,11 +31,6 @@ header h3 {
   color: purple;
   background: green;
   padding: 0.5rem 4rem;
-}
-header p {
-  font-size: 1.2rem;
-  max-width: 50%;
-  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
