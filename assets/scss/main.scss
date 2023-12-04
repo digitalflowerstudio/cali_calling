@@ -2,7 +2,15 @@
 @use "./abstracts/" as a;
 @use "./mixin" as mix;
 
+/* ----- Global Styling ----- */
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+  text-decoration: none;
+}
 
 header {
   @include mix.header;

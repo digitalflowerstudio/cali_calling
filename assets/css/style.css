@@ -20,6 +20,15 @@
   font-family: "Inter";
   src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
 }
+/* ----- Global Styling ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+  text-decoration: none;
+}
+
 header {
   display: flex;
   flex-direction: column;
