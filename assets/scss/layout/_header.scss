@@ -1,5 +1,6 @@
+/* ----- Header Styles ----- */
+
 header {
-    height: 50rem;
     width: 100%;
 }
 
@@ -10,7 +11,8 @@ header {
     align-items: center;
     gap: 1rem;
     text-align: center;
-    margin-bottom: 10rem;
+    padding-bottom: 10rem;
+    width: 100%;
 }
 
 .headerBottom {
@@ -18,26 +20,5 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 4rem;
-    margin: 3rem 0rem;
-}
-
-.story {
-    padding: 1rem 4rem;
-}
-
-.storyIntro {
-    margin-bottom: 4rem;
-}
-
-.storyFactsFrame {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.storyFacts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding-bottom: 5rem;
 }

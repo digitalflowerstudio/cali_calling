@@ -1,3 +1,10 @@
+/* ----- Reset ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* ----- Font Imports ----- */
 @font-face {
   font-family: "Inter";
@@ -28,7 +35,7 @@ header, .story {
 }
 
 .title {
-  font-size: 6rem;
+  font-size: 8rem;
   line-height: 0.8;
 }
 
@@ -44,6 +51,7 @@ header, .story {
   padding: 1rem 2rem;
 }
 
+/* ----- Section Story Styles ----- */
 .storyIntro, .factOneTitle, .factTwoTitle, .factThreeTitle {
   color: white;
   font-size: 5rem;
@@ -55,11 +63,11 @@ header, .story {
   height: auto;
 }
 
-/* ----- Reset ----- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* ----- Setion Mission ----- */
+.missionTopHeadline {
+  color: black;
+  font-size: 4rem;
+  font-weight: 800;
 }
 
 /* ----- Smooth Scrolling ----- */
@@ -79,8 +87,8 @@ header, .story {
   pointer-events: none;
 }
 
+/* ----- Header Styles ----- */
 header {
-  height: 50rem;
   width: 100%;
 }
 
@@ -91,7 +99,8 @@ header {
   align-items: center;
   gap: 1rem;
   text-align: center;
-  margin-bottom: 10rem;
+  padding-bottom: 10rem;
+  width: 100%;
 }
 
 .headerBottom {
@@ -99,9 +108,11 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 4rem;
-  margin: 3rem 0rem;
+  padding-bottom: 5rem;
 }
 
+/* ----- Main Styles ----- */
+/* ----- Section Story Styles ----- */
 .story {
   padding: 1rem 4rem;
 }
@@ -121,6 +132,23 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/* ----- Section Mission Styles ----- */
+.missionImages * {
+  width: 15rem;
+  height: auto;
+}
+
+.mission {
+  width: 100%;
+}
+
+.missionInfoFrame {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 50rem;
 }
 
 /*# sourceMappingURL=style.css.map */

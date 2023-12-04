@@ -1,0 +1,42 @@
+/* ----- Main Styles ----- */
+
+/* ----- Section Story Styles ----- */
+
+.story {
+    padding: 1rem 4rem;
+}
+
+.storyIntro {
+    margin-bottom: 4rem;
+}
+
+.storyFactsFrame {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.storyFacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ----- Section Mission Styles ----- */
+
+.missionImages * {
+    width: 15rem;
+    height: auto;
+}
+
+.mission {
+    width: 100%;
+}
+
+.missionInfoFrame {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 50rem;
+}

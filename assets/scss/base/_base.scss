@@ -27,7 +27,7 @@ header, .story {
 }
 
 .title {
-    font-size: 6rem;
+    font-size: 8rem;
     line-height: 0.8;
 }
 
@@ -43,6 +43,8 @@ header, .story {
     padding: 1rem 2rem;
 }
 
+/* ----- Section Story Styles ----- */
+
 .storyIntro, .factOneTitle, .factTwoTitle, .factThreeTitle {
     color: $white;
     font-size: 5rem;
@@ -52,4 +54,12 @@ header, .story {
 .map {
     width: 40%;
     height: auto;
+}
+
+/* ----- Setion Mission ----- */
+
+.missionTopHeadline {
+    color: $black;
+    font-size: 4rem;
+    font-weight: 800;
 }
