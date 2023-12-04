@@ -35,3 +35,21 @@ header, .story {
     color: $black;
     text-shadow: 0 0 2px $white, 0 0 2px $white, 0 0 2px $white, 0 0 2px white; 
 }
+
+.rsvp {
+    text-decoration: none;
+    color: $white;
+    border: 1px solid $white;
+    padding: 1rem 2rem;
+}
+
+.storyIntro, .factOneTitle, .factTwoTitle, .factThreeTitle {
+    color: $white;
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.map {
+    width: 40%;
+    height: auto;
+}
