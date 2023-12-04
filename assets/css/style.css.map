@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/vendor/_lenis.scss","../scss/abstracts/_fonts.scss","../scss/style.scss"],"names":[],"mappings":"AAAA;AAGE;EACE;;AAGF;EACE;;AAGF;EACE;;AAGF;EACE;;AAGF;EACE;;;ACpBJ;AAEA;EACI;EACA;;ACDJ;AAEA;EACE;EACA;EACA;EACA;EACA","file":"style.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/base/_reset.scss","../scss/vendor/_lenis.scss","../scss/abstracts/_fonts.scss"],"names":[],"mappings":"AAAA;AAEA;EACI;EACA;EACA;;;ACLJ;AAGE;EACE;;AAGF;EACE;;AAGF;EACE;;AAGF;EACE;;AAGF;EACE;;;ACpBJ;AAEA;EACI;EACA","file":"style.css"}
