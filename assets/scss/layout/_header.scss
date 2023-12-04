@@ -1,0 +1,13 @@
+header {
+    height: 50rem;
+    width: 100%;
+}
+
+.headerTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}

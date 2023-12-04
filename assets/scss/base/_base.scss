@@ -1,0 +1,37 @@
+@use "../abstracts/" as *;
+
+/* ----- Global Styles ----- */
+
+* {
+    font-family: 'Inter';
+}
+
+/* ----- Header Styles ----- */
+
+header, .story {
+    background-color: $black;
+    color: $white;
+}
+
+.line {
+    background-color: $white;
+    width: 1px;
+    height: 10rem;
+    margin-bottom: 2rem;
+}
+
+.preTitle, .subTitle {
+    font-size: 1rem;
+    font-weight: 400;
+    word-spacing: 0.1rem;
+}
+
+.title {
+    font-size: 6rem;
+    line-height: 0.8;
+}
+
+.titleVar {
+    color: $black;
+    text-shadow: 0 0 2px $white, 0 0 2px $white, 0 0 2px $white, 0 0 2px white; 
+}
