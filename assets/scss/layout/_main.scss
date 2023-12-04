@@ -37,6 +37,23 @@
 .missionInfoFrame {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 6rem 0;
+}
+
+.missionInfo {
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
-    gap: 50rem;
+    width: 30%;
+    gap: 40rem;
+}
+
+.missionImages {
+    position: relative;
+}
+
+.missionImg1 {
+    position: absolute;
+    top: -50rem;
 }
