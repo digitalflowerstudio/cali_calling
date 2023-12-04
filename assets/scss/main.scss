@@ -1,21 +1,6 @@
-@use "./scripts/smooth";
-@use "./abstracts/" as a;
-@use "./mixin" as mix;
-
-/* ----- Global Styling ----- */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Inter";
-  text-decoration: none;
-}
-
-header {
-  @include mix.header;
-
-  h3 {
-    @include mix.textStyle(1.2rem, purple, green, 0.5rem 4rem);
-  }
-}
+@use "./base/";
+@use "./vendor";
+@use "./abstracts";
+@use "./layout/";
+@use "./components/";
+@use "./utilities/";
