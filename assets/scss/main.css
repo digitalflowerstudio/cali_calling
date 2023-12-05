@@ -259,7 +259,6 @@ footer {
   width: 100%;
   color: white;
   text-decoration: none;
-  padding: 2rem;
 }
 footer nav {
   display: flex;
@@ -432,6 +431,4 @@ header {
   right: 0px;
   bottom: 0px;
   left: 0px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */

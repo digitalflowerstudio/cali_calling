@@ -225,3 +225,43 @@ main .sc__golden-bear {
     transform: translateX(50%);
     transform: translateY(10%);
 }
+
+/* ----- Footer ----- */
+
+footer {
+  background-color: $black;
+  width: 100%;
+  color: $white;
+  text-decoration: none;
+  padding: 2rem;
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+footer a {
+  color: $white;
+  text-decoration: none;
+}
+
+.footer__logo, .footer__logo2 {
+  width: 3rem;
+}
+
+.rsvp__footer {
+  text-decoration: none;
+  color: $white;
+  border: 1px solid $white;
+  padding: 1rem 2rem;
+}
+
+.footer__Info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+  p {
+    font-size: 2rem;
+  }
+}
