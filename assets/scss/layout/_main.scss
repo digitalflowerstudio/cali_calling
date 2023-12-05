@@ -5,82 +5,80 @@
 /* ----- Section Story Styles ----- */
 
 .story {
-    padding: 1rem 4rem;
+  padding: 1rem 4rem;
 }
 
 .storyIntro {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
 .storyFactsFrame {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .storyFacts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* ----- Section Mission Styles ----- */
 
 .missionImages * {
-    width: 15rem;
-    height: auto;
+  width: 15rem;
+  height: auto;
 }
 
 .mission {
-    width: 100%;
+  width: 100%;
 }
 
 .missionInfoFrame {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 6rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem 0;
 }
 
 .missionInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30%;
-    gap: 40rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30%;
+  gap: 40rem;
 }
 
 .missionImages * {
-    position: relative;
+  position: relative;
 }
 
-
 .missionImg1 {
-    @include imgXYPos(-1200px, 0px, 0px, 900px,);
+  @include imgXYPos(-1200px, 0px, 0px, 900px);
 }
 
 .missionImg2 {
-    @include imgXYPos(-800px, 0px, 0px, -200px,);
+  @include imgXYPos(-800px, 0px, 0px, -200px);
 }
 
 .missionImg3 {
-    @include imgXYPos(-600px, 0px, 0px, 350px,);
+  @include imgXYPos(-600px, 0px, 0px, 350px);
 }
 
 .missionImg4 {
-    @include imgXYPos(-400px, 0px, 0px, -500px,);
+  @include imgXYPos(-400px, 0px, 0px, -500px);
 }
 
 .missionImg5 {
-    @include imgXYPos(-300px, 0px, 0px, 0
-    px,);
+  @include imgXYPos(-300px, 0px, 0px, 0 px);
 }
 
 .missionImg6 {
-    @include imgXYPos(-200px, 0px, 0px, 50px,);
+  @include imgXYPos(-200px, 0px, 0px, 50px);
 }
 
 .missionImg7 {
-    @include imgXYPos(00px, 0px, 0px, 0px,);
+  @include imgXYPos(00px, 0px, 0px, 0px);
 }

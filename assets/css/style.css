@@ -10,17 +10,35 @@
   font-family: "Poppins";
   src: url(../fonts/Poppins/Poppins-Regular.ttf);
 }
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter/Inter-VariableFont_slntwght.ttf);
+}
+@font-face {
+  font-family: "WorkSans";
+  src: url(../fonts/Work_Sans/WorkSans-VariableFont_wght.ttf);
+}
 /* ----- VAR General ----- */
 /* ----- Header Variables----- */
 /* ----- Main Variables ----- */
 /* ----- Variables for Bear Section ----- */
+/* ----- Mixins----- */
+/* ----- Animation Mixins ----- */
+/* ----- Layout Mixins ----- */
+/* ----- Button----- */
+/* ----- Mission Section Images ----- */
+/* ----- Stroke ----- */
+/* ----- Media Queries (Work In Progress) ----- */
 /* ----- Global Styles ----- */
 * {
   font-family: "Poppins";
+  font-family: "Inter";
+  font-family: "WorkSans";
 }
 
 /* ----- Header Styles ----- */
-header, .story {
+header,
+.story {
   background-color: black;
   color: white;
 }
@@ -32,7 +50,8 @@ header, .story {
   margin-bottom: 2rem;
 }
 
-.preTitle, .subTitle {
+.preTitle,
+.subTitle {
   font-size: 1rem;
   font-weight: 400;
   word-spacing: 0.1rem;
@@ -61,7 +80,10 @@ header, .story {
 }
 
 /* ----- Section Story Styles ----- */
-.storyIntro, .factOneTitle, .factTwoTitle, .factThreeTitle {
+.storyIntro,
+.factOneTitle,
+.factTwoTitle,
+.factThreeTitle {
   color: white;
   font-size: 5rem;
   font-weight: 800;
@@ -80,7 +102,7 @@ header, .story {
 }
 
 /* ----- Section Bears ----- */
-/* ----- Setion Bear Gold ----- */
+/* ----- Sub-Setion Bear Gold ----- */
 main .sc__golden-bear {
   height: 1320px;
   margin: 0 auto;
@@ -184,7 +206,7 @@ main .sc__round-img img {
     transform: rotate(360deg);
   }
 }
-/* ----- Setion Bear Poppy ----- */
+/* ----- Sub-Setion Bear Poppy ----- */
 main .sc__poppy {
   height: 1320px;
   background-color: rgb(245, 245, 245);
@@ -354,20 +376,20 @@ main .sc__poppy #img_small-bear {
 }
 .footer .div__footer-white p {
   width: 100%;
-  animation: bildlauf 10s linear 0s infinite forwards;
+  animation: ribbon 9s linear 0s infinite forwards;
 }
-@keyframes bildlauf {
+@keyframes ribbon {
   0% {
     transform: translateX(0);
   }
   25% {
-    transform: translateX(100%);
+    transform: translateX(65%);
   }
   50% {
     transform: translateX(0);
   }
   75% {
-    transform: translateX(-100%);
+    transform: translateX(-85%);
   }
   100% {
     transform: translateX(0);
