@@ -57,7 +57,7 @@
 
 
 .missionImg1 {
-    @include imgXYPos(-1200px, 0px, 0px, 850px,);
+    @include imgXYPos(-1200px, 0px, 0px, 900px,);
 }
 
 .missionImg2 {
@@ -73,11 +73,12 @@
 }
 
 .missionImg5 {
-    @include imgXYPos(-300px, 0px, 0px, 800px,);
+    @include imgXYPos(-300px, 0px, 0px, 0
+    px,);
 }
 
 .missionImg6 {
-    @include imgXYPos(-200px, 0px, 0px, -150px,);
+    @include imgXYPos(-200px, 0px, 0px, 50px,);
 }
 
 .missionImg7 {

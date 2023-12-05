@@ -7,12 +7,12 @@
 
 /* ----- Font Imports ----- */
 @font-face {
-  font-family: "Inter";
-  src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+  font-family: "Poppins";
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
 }
 /* ----- Global Styles ----- */
 * {
-  font-family: "Inter";
+  font-family: "Poppins";
 }
 
 /* ----- Header Styles ----- */
@@ -50,6 +50,11 @@ header, .story {
   border: 1px solid white;
   padding: 1rem 2rem;
 }
+.rsvp:hover {
+  cursor: pointer;
+  color: #000000;
+  background-color: #ffffff;
+}
 
 /* ----- Section Story Styles ----- */
 .storyIntro, .factOneTitle, .factTwoTitle, .factThreeTitle {
@@ -70,7 +75,8 @@ header, .story {
   font-weight: 800;
 }
 
-/* ----- Bears ----- */
+/* ----- Section Bears ----- */
+/* ----- Setion Bear Gold ----- */
 main .sc__golden-bear {
   height: 1320px;
   margin: 0 auto;
@@ -89,7 +95,7 @@ main .sc__golden-bear .div__bear_description {
 }
 
 main .sc__golden-bear .div__bear_description .p__page {
-  font-family: "Inter";
+  font-family: "Poppins";
   font-size: 1.25rem;
 }
 
@@ -106,13 +112,13 @@ main .sc__golden-bear .div__bear_description .div__descr-flex h3 {
 }
 
 main .sc__golden-bear .div__bear_description .div__descr-flex .p__description {
-  font-family: "Inter";
+  font-family: "Poppins";
   font-size: 1.75rem;
   width: 540px;
 }
 
 main .sc__golden-bear .div__bear_description .div__descr-flex .p__description span {
-  font-family: "WorkSans";
+  font-family: "Poppins";
   font-size: 1.125rem;
   line-height: 2rem;
 }
@@ -154,6 +160,7 @@ main .sc__round-img {
   position: relative;
 }
 
+/* ----- Animation Round ----- */
 main .sc__round-img img {
   position: absolute;
   width: 420px;
@@ -173,6 +180,7 @@ main .sc__round-img img {
     transform: rotate(360deg);
   }
 }
+/* ----- Setion Bear Poppy ----- */
 main .sc__poppy {
   height: 1320px;
   background-color: rgb(245, 245, 245);
@@ -193,7 +201,7 @@ main .sc__poppy .div__bear_description {
 }
 
 main .sc__poppy .div__bear_description .p__page {
-  font-family: "Inter";
+  font-family: "Poppins";
   font-size: 1.25rem;
 }
 
@@ -210,13 +218,13 @@ main .sc__poppy .div__bear_description .div__descr-flex h3 {
 }
 
 main .sc__poppy .div__bear_description .div__descr-flex .p__description {
-  font-family: "Inter";
+  font-family: "Poppins";
   font-size: 1.75rem;
   width: 540px;
 }
 
 main .sc__poppy .div__bear_description .div__descr-flex .p__description span {
-  font-family: "Inter";
+  font-family: "Poppins";
   font-size: 1.125rem;
   line-height: 2rem;
 }
@@ -254,42 +262,118 @@ main .sc__poppy #img_small-bear {
 }
 
 /* ----- Footer ----- */
-footer {
-  background-color: black;
-  width: 100%;
-  color: white;
-  text-decoration: none;
-  padding: 2rem;
+.footer {
+  color: #ffffff;
+  background-color: #000000;
+  position: relative;
+  padding: 5rem 0 5rem 6.875rem;
+  overflow: hidden;
+  /* ----- Footer Navigation ----- */
+  /* ----- Ribbon Animation ----- */
 }
-footer nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-footer a {
-  color: white;
-  text-decoration: none;
-}
-
-.footer__logo, .footer__logo2 {
-  width: 3rem;
-}
-
-.rsvp__footer {
-  text-decoration: none;
-  color: white;
-  border: 1px solid white;
-  padding: 1rem 2rem;
-}
-
-.footer__Info {
+.footer article {
+  width: 520px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 1rem;
-  width: 50%;
+  margin-bottom: 4rem;
 }
-.footer__Info p {
-  font-size: 2rem;
+.footer article .a__join {
+  font-family: "Poppins";
+  font-size: 0.875rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer article p {
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  line-height: 2.875rem;
+}
+.footer article .a__rsvp {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Poppins";
+  font-size: 1.25rem;
+  width: min-content;
+  padding: 1rem 2.5rem;
+  border: 1px solid #ffffff;
+}
+.footer article .a__rsvp:hover {
+  cursor: pointer;
+  color: #000000;
+  background-color: #ffffff;
+}
+.footer nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.footer nav .div__nav_footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 0.875rem;
+}
+.footer nav .div__nav_footer .div__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.footer nav .div__nav_footer .div__links .img__link {
+  width: 1rem;
+  height: 0.875rem;
+}
+.footer nav figure {
+  padding-right: 10rem;
+}
+.footer nav figure .fig__img {
+  width: 50px;
+}
+.footer .div__footer-white {
+  position: absolute;
+  font-family: "Poppins";
+  font-size: 5rem;
+  color: #000000;
+  background-color: #ffffff;
+  width: 1920px;
+  height: "";
+  top: "";
+  right: 0;
+  bottom: 0;
+  left: "";
+  transform: translateX(50%) rotateZ(45deg);
+}
+.footer .div__footer-white p {
+  width: 100%;
+  animation: bildlauf 10s linear 0s infinite forwards;
+}
+@keyframes bildlauf {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
+  75% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.footer .div__footer-white p span {
+  color: #ffffff;
+  background-color: #ffffff;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
 }
 
 /* ----- Smooth Scrolling ----- */
@@ -389,7 +473,7 @@ header {
   top: -1200px;
   right: 0px;
   bottom: 0px;
-  left: 850px;
+  left: 900px;
 }
 
 .missionImg2 {
@@ -417,14 +501,14 @@ header {
   top: -300px;
   right: 0px;
   bottom: 0px;
-  left: 800px;
+  left: 0 px;
 }
 
 .missionImg6 {
   top: -200px;
   right: 0px;
   bottom: 0px;
-  left: -150px;
+  left: 50px;
 }
 
 .missionImg7 {

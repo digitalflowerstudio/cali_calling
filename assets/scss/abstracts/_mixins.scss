@@ -1,6 +1,134 @@
+@use "./variables" as var;
+
+
 @mixin imgXYPos($top, $right, $bottom, $left) {
     top: $top;
     right: $right;
     bottom: $bottom;
     left: $left;
+}
+
+@mixin blackwhite($color, $backcolor) {
+    color: $color;
+    background-color: $backcolor;
+}
+
+@mixin transform($transX, $transY) {
+    transform: translateX($transX);
+    transform: translateY($transY);
+}
+
+@mixin rotate($transX, $transY, $transZ) {
+    transform: rotateX($transX);
+    transform: rotateY($transY);
+    transform: rotateZ($transZ);
+}
+
+@mixin threesixty {
+
+    animation: rotate360 3s linear 0s infinite forwards;
+
+    @keyframes rotate360 {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+        
+    }
+}
+
+@mixin stringtransform {
+    transform: translateX(50%) rotateZ(45deg);
+}
+@mixin stringanimation {
+
+    animation: bildlauf 10s linear 0s infinite forwards;
+
+    @keyframes bildlauf {
+        0% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(100%);
+        }
+        50% {
+            transform: translateX(0);
+        }
+        75% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
+
+//======= Global ===== //
+
+
+@mixin flex_center_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+}
+@mixin flex_center_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@mixin flex_between_column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@mixin flex_between_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@mixin aTag($deco, $color) {
+    text-decoration: $deco;
+    color: $color;
+}
+
+@mixin fontdef($family, $size) {
+    font-family: $family;
+    font-size: $size;
+}
+
+@mixin central {
+    max-width: var.$max-width;
+    margin: 0 auto;
+}
+
+@mixin overflow($expression) {
+    overflow: $expression
+}
+
+@mixin rsvp {
+    @include aTag(none, var.$color-white);
+    @include fontdef('Poppins', 1.25rem);
+    width: min-content;
+    padding: 1rem 2.5rem;
+    border: 1px solid var.$color-white;
+}
+
+@mixin imgXZPos($width, $height, $top, $right, $bottom, $left) {
+    width: $width;
+    height: $height;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin textStroke($width, $color) {
+    -webkit-text-stroke-width: $width;
+    -webkit-text-stroke-color: $color;
 }

@@ -1,10 +1,11 @@
 @use "../abstracts/" as *;
 @use "../abstracts/mixins" as mix;
+@use "../abstracts/variables" as var;
 
 /* ----- Global Styles ----- */
 
 * {
-    font-family: 'Inter';
+    font-family: 'Poppins';
 }
 
 /* ----- Header Styles ----- */
@@ -42,6 +43,10 @@ header, .story {
     color: $white;
     border: 1px solid $white;
     padding: 1rem 2rem;
+    &:hover {
+      cursor:pointer;
+      @include mix.blackwhite(var.$color-black, var.$color-white);
+  }
 }
 
 /* ----- Section Story Styles ----- */
@@ -65,7 +70,9 @@ header, .story {
     font-weight: 800;
 }
 
-/* ----- Bears ----- */
+/* ----- Section Bears ----- */
+
+/* ----- Setion Bear Gold ----- */
 
 main .sc__golden-bear {
     height: 1320px;
@@ -83,7 +90,7 @@ main .sc__golden-bear {
     margin-top: 180px;
   }
   main .sc__golden-bear .div__bear_description .p__page {
-    font-family: "Inter";
+    font-family: "Poppins";
     font-size: 1.25rem;
   }
   main .sc__golden-bear .div__bear_description .div__descr-flex {
@@ -97,12 +104,12 @@ main .sc__golden-bear {
     font-size: 5.25rem;
   }
   main .sc__golden-bear .div__bear_description .div__descr-flex .p__description {
-    font-family: "Inter";
+    font-family: "Poppins";
     font-size: 1.75rem;
     width: 540px;
   }
   main .sc__golden-bear .div__bear_description .div__descr-flex .p__description span {
-    font-family: "WorkSans";
+    font-family: "Poppins";
     font-size: 1.125rem;
     line-height: 2rem;
   }
@@ -138,6 +145,9 @@ main .sc__golden-bear {
     height: 420px;
     position: relative;
   }
+
+  /* ----- Animation Round ----- */
+
   main .sc__round-img img {
     position: absolute;
     width: 420px;
@@ -156,6 +166,9 @@ main .sc__golden-bear {
       transform: rotate(360deg);
     }
   }
+
+  /* ----- Setion Bear Poppy ----- */
+
   main .sc__poppy {
     height: 1320px;
     background-color: rgb(245, 245, 245);
@@ -174,7 +187,7 @@ main .sc__golden-bear {
     margin-top: 180px;
   }
   main .sc__poppy .div__bear_description .p__page {
-    font-family: "Inter";
+    font-family: "Poppins";
     font-size: 1.25rem;
   }
   main .sc__poppy .div__bear_description .div__descr-flex {
@@ -188,12 +201,12 @@ main .sc__golden-bear {
     font-size: 5.25rem;
   }
   main .sc__poppy .div__bear_description .div__descr-flex .p__description {
-    font-family: "Inter";
+    font-family: "Poppins";
     font-size: 1.75rem;
     width: 540px;
   }
   main .sc__poppy .div__bear_description .div__descr-flex .p__description span {
-    font-family: "Inter";
+    font-family: "Poppins";
     font-size: 1.125rem;
     line-height: 2rem;
   }
@@ -228,40 +241,85 @@ main .sc__golden-bear {
 
 /* ----- Footer ----- */
 
-footer {
-  background-color: $black;
-  width: 100%;
-  color: $white;
-  text-decoration: none;
-  padding: 2rem;
-  nav {
-    display: flex;
-    justify-content: space-between;
+.footer {
+  @include mix.blackwhite(var.$color-white, var.$color-black);
+  position: relative;
+  padding: 5rem 0 5rem var.$padding-side;
+
+  @include mix.overflow(hidden);
+
+  article {
+      width: 520px;
+      @include mix.flex_between_column;
+      gap: 1rem;
+      margin-bottom: 4rem;
+
+      .a__join {
+          @include mix.fontdef('Poppins', .875rem);
+          color: var.$color-white;
+          text-decoration: none;
+      }
+
+      p {
+          @include mix.fontdef('Poppins', 1.5rem);
+          line-height: 2.875rem;
+      }
+
+      .a__rsvp {
+          @include mix.rsvp;
+          &:hover {
+              cursor:pointer;
+              @include mix.blackwhite(var.$color-black, var.$color-white);
+          }
+      }
   }
-}
 
-footer a {
-  color: $white;
-  text-decoration: none;
-}
+/* ----- Footer Navigation ----- */
 
-.footer__logo, .footer__logo2 {
-  width: 3rem;
-}
+  nav {
+      @include mix.flex_between_row;
+      align-items: flex-start;
+      .div__nav_footer {
+          @include mix.flex_between_column;
+          justify-content: flex-start;
+          gap: .875rem;
 
-.rsvp__footer {
-  text-decoration: none;
-  color: $white;
-  border: 1px solid $white;
-  padding: 1rem 2rem;
-}
+          .div__links {
+              @include mix.flex_between_row;
+              justify-content: flex-start;
+              gap: .5rem;
 
-.footer__Info {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 50%;
-  p {
-    font-size: 2rem;
+              .img__link {
+                  width: 1rem;
+                  height: 0.875rem;
+              }
+          }
+      }
+      figure {
+          padding-right: 10rem;
+          .fig__img {
+              width: 50px;
+          }
+      }
+  }
+
+/* ----- Ribbon Animation ----- */
+
+  .div__footer-white {
+      position: absolute;
+      @include mix.fontdef('Poppins', 5rem);
+      @include mix.blackwhite(var.$color-black, var.$color-white);
+      @include mix.imgXZPos(var.$max-width, "", "", 0, 0, "");
+      @include mix.stringtransform;
+
+      p {
+          width: 100%;
+          @include mix.stringanimation;
+
+          span {
+              @include mix.blackwhite(var.$color-white, var.$color-white);
+              @include mix.textStroke(1px, var.$color-black);
+          }
+      }
   }
 }
