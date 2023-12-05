@@ -143,7 +143,12 @@ main .sc__golden-bear .div__bear_description .div__descr-flex .p__description {
   width: 540px;
 }
 
-main .sc__golden-bear .div__bear_description .div__descr-flex .p__description span {
+main
+  .sc__golden-bear
+  .div__bear_description
+  .div__descr-flex
+  .p__description
+  span {
   font-family: "Poppins";
   font-size: 1.125rem;
   line-height: 2rem;
@@ -402,20 +407,23 @@ main .sc__poppy #img_small-bear {
   -webkit-text-stroke-color: #000000;
 }
 
-/* ----- Smooth Scrolling ----- */
-* html.lenis {
+html.lenis {
   height: auto;
 }
-* .lenis.lenis-smooth {
+
+.lenis.lenis-smooth {
   scroll-behavior: auto;
 }
-* .lenis.lenis-smooth [data-lenis-prevent] {
+
+.lenis.lenis-smooth [data-lenis-prevent] {
   overscroll-behavior: contain;
 }
-* .lenis.lenis-stopped {
+
+.lenis.lenis-stopped {
   overflow: hidden;
 }
-* .lenis.lenis-scrolling iframe {
+
+.lenis.lenis-scrolling iframe {
   pointer-events: none;
 }
 
