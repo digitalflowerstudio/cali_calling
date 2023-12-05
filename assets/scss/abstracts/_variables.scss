@@ -1,4 +1,4 @@
-//======= Global ===== //
+/* ----- VAR General ----- */
 $color-black: #000000;
 $color-white: #ffffff;
 $color-grey: rgb(245, 245, 245);
@@ -11,7 +11,7 @@ $padding-side: 6.875rem;
 
 
 
-//======= Header ===== //
+/* ----- Header Variables----- */
 
 $header-top: 150px;
 $header-middle: 260px;
@@ -19,13 +19,13 @@ $h1-font-size: 4rem;
 
 $p-header-font-size: 0.625rem;
 
-//======= Main ===== //
+/* ----- Main Variables ----- */
 
 $margin-div_info: 4rem;
 
 $width-action-string: 480px;
 
-//======= Bear ===== //
+/* ----- Variables for Bear Section ----- */
 
 $width-big: 731px;
 $height-big: 731px;
@@ -34,7 +34,5 @@ $width-small: 366px;
 $height-small: 472px;
 
 $width-bear: 1096px;
-
-//======= Bear ===== //
 
 $round-img: 420px;
