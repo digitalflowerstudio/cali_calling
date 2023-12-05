@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 /* ----- Main Styles ----- */
 
 /* ----- Section Story Styles ----- */
@@ -49,11 +51,35 @@
     gap: 40rem;
 }
 
-.missionImages {
+.missionImages * {
     position: relative;
 }
 
+
 .missionImg1 {
-    position: absolute;
-    top: -50rem;
+    @include imgXYPos(-1200px, 0px, 0px, 850px,);
+}
+
+.missionImg2 {
+    @include imgXYPos(-800px, 0px, 0px, -200px,);
+}
+
+.missionImg3 {
+    @include imgXYPos(-600px, 0px, 0px, 350px,);
+}
+
+.missionImg4 {
+    @include imgXYPos(-400px, 0px, 0px, -500px,);
+}
+
+.missionImg5 {
+    @include imgXYPos(-300px, 0px, 0px, 800px,);
+}
+
+.missionImg6 {
+    @include imgXYPos(-200px, 0px, 0px, -150px,);
+}
+
+.missionImg7 {
+    @include imgXYPos(00px, 0px, 0px, 0px,);
 }
